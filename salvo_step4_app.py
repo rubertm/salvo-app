@@ -6,9 +6,9 @@ SALVO Process - Step 4: Evaluate and Optimize Timing of Discrete Options
 Sistema integrado TOPSIS + LCC para evaluación multicriterio de alternativas
 de infraestructura con optimización de timing de inversión.
 
-Proyecto: La Camila - Machado
-Cliente: EPM Medellín
-Colaboración: Copenhagen (HOFOR)
+Proyecto: redes de acueducto
+Cliente: Empresas de Acueducto
+Colaboración: En consulta
 Año: 2025
 
 Versión: 2.2 (Mejorada con exportación HTML y N alternativas)
@@ -56,8 +56,8 @@ from scipy.stats import spearmanr
 CONFIG = {
     'project': {
         'name': 'SALVO Process',
-        'client': 'EPM Medellín',
-        'collaboration': 'Copenhagen (HOFOR)',
+        'client': 'Empresas de Acueducto',
+        'collaboration': 'En consulta',
         'year': 2025
     },
 
@@ -1044,18 +1044,18 @@ app.layout = html.Div([
                    style={'color': CONFIG['visualization']['colors']['primary'],
                          'marginTop': '0px', 'marginBottom': '15px', 'textAlign': 'center'}),
             html.Div([
-                html.Img(src='/assets/epm.png',
+                html.Img(src='/assets/colaborador1.png',
                         style={'height':'65px', 'margin':'5px 10px'},
                         alt='EPM'),
-                html.Img(src='/assets/escudoCopenhague.png',
+                html.Img(src='/assets/escudoCiudad2.png',
                         style={'height':'65px', 'margin':'5px 10px'},
                         alt='Copenhagen'),
             ], style={'textAlign': 'center', 'marginBottom': '8px'}),
             html.Div([
-                html.Img(src='/assets/escudoMedellin.png',
+                html.Img(src='/assets/escudoCiudad1.png',
                         style={'height':'75px', 'margin':'5px 10px'},
                         alt='Medellín'),
-                html.Img(src='/assets/Hoforpng.png',
+                html.Img(src='/assets/colaborador2.png',
                         style={'height':'65px', 'margin':'5px 10px'},
                         alt='HOFOR')
             ], style={'textAlign': 'center', 'marginBottom': '8px'}),
