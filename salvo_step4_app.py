@@ -6,9 +6,9 @@ SALVO Process - Step 4: Evaluate and Optimize Timing of Discrete Options
 Sistema integrado TOPSIS + LCC para evaluación multicriterio de alternativas
 de infraestructura con optimización de timing de inversión.
 
-Proyecto: redes de acueducto
+Proyecto: Redes de Acueducto
 Cliente: Empresas de Acueducto
-Colaboración: En consulta
+Colaboración: World
 Año: 2025
 
 Versión: 2.2 (Mejorada con exportación HTML y N alternativas)
@@ -57,7 +57,7 @@ CONFIG = {
     'project': {
         'name': 'SALVO Process',
         'client': 'Empresas de Acueducto',
-        'collaboration': 'En consulta',
+        'collaboration': 'World',
         'year': 2025
     },
 
@@ -1046,18 +1046,18 @@ app.layout = html.Div([
             html.Div([
                 html.Img(src='/assets/colaborador1.png',
                         style={'height':'65px', 'margin':'5px 10px'},
-                        alt='EPM'),
+                        alt='Colaborador1'),
                 html.Img(src='/assets/escudoCiudad2.png',
                         style={'height':'65px', 'margin':'5px 10px'},
-                        alt='Copenhagen'),
+                        alt='Ciudad2'),
             ], style={'textAlign': 'center', 'marginBottom': '8px'}),
             html.Div([
                 html.Img(src='/assets/escudoCiudad1.png',
                         style={'height':'75px', 'margin':'5px 10px'},
-                        alt='Medellín'),
+                        alt='Ciudad1'),
                 html.Img(src='/assets/colaborador2.png',
                         style={'height':'65px', 'margin':'5px 10px'},
-                        alt='HOFOR')
+                        alt='Colaborador2')
             ], style={'textAlign': 'center', 'marginBottom': '8px'}),
             html.Div("Strategic Sectoral Cooperation",
                     style={'fontSize': 11, 'color': '#95A5A6', 'textAlign': 'center',
@@ -1710,7 +1710,7 @@ def export_figure_as_html(n_clicks, figure_dict, tipo_grafico, excel_filename):
 <body>
     <div class="header">
         <h1>🌟 SALVO Process - Análisis Multicriterio</h1>
-        <div class="subtitle">EPM Medellín + Copenhagen (HOFOR) | Strategic Sectoral Cooperation 2025</div>
+        <div class="subtitle">World | Strategic Sectoral Cooperation 2025</div>
     </div>
 
     <div class="info">
@@ -1727,7 +1727,7 @@ def export_figure_as_html(n_clicks, figure_dict, tipo_grafico, excel_filename):
 
     <div class="footer">
         <p>Generado por SALVO Process - Sistema integrado TOPSIS + LCC para evaluación multicriterio</p>
-        <p>© 2025 EPM Medellín - Copenhagen (HOFOR) Collaboration</p>
+        <p>© 2025 World Collaboration</p>
     </div>
 </body>
 </html>
