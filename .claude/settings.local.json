@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install *)",
+      "Bash(Start-Process python *)",
+      "Bash(Start-Sleep -Seconds 5)",
+      "Bash(Write-Host \"Server started\")",
+      "Bash(cat /tmp/salvo_out.txt 2>/dev/null || echo \"no output file\")",
+      "Bash(timeout 8 python salvo_step4_app.py)",
+      "PowerShell($env:PYTHONIOENCODING = \"utf-8\"; cd \"C:\\\\Users\\\\Admin\\\\Documents\\\\py\\\\pyenv\\\\salvo\"; $output = python salvo_step4_app.py 2>&1 | Select-Object -First 40; $output)",
+      "Bash(PYTHONIOENCODING=utf-8 timeout 12 python \"C:\\\\Users\\\\Admin\\\\Documents\\\\py\\\\pyenv\\\\salvo\\\\salvo_step4_app.py\")",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(PYTHONIOENCODING=utf-8 timeout 10 python \"C:\\\\Users\\\\Admin\\\\Documents\\\\py\\\\pyenv\\\\salvo\\\\salvo_step4_app.py\")",
+      "PowerShell($env:PYTHONIOENCODING = \"utf-8\"; cd \"C:\\\\Users\\\\Admin\\\\Documents\\\\py\\\\pyenv\\\\salvo\"; $proc = Start-Process python -ArgumentList \"salvo_step4_app.py\" -RedirectStandardOutput \"$env:TEMP\\\\salvo_out.txt\" -RedirectStandardError \"$env:TEMP\\\\salvo_err.txt\" -PassThru -NoNewWindow; Start-Sleep 8; Get-Content \"$env:TEMP\\\\salvo_out.txt\" -ErrorAction SilentlyContinue; Get-Content \"$env:TEMP\\\\salvo_err.txt\" -ErrorAction SilentlyContinue; $proc.Kill\\(\\))"
+    ]
+  }
+}

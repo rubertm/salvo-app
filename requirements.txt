@@ -1,0 +1,9 @@
+dash
+pandas
+numpy
+scikit-learn
+plotly
+networkx
+scipy
+gunicorn
+openpyxl
